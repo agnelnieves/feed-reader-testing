@@ -81,6 +81,17 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
 
+          it('toggles on and off', function() {
+              const body = document.querySelector('body');
+              //   Checking if menu icon is toggled
+              const menu = document.querySelector('.menu-icon-link');
+
+            // listening menu's click event
+              menu.click();
+              // checks if menu is hidden or toggled
+              expect(body.classList.contains('menu-hidden')).toBe(false);
+          });
+
 
         }); //End menu test
 
