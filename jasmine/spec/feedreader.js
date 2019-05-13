@@ -108,7 +108,7 @@ $(function () {
         it('completes work', function () {
             console.log($('.feed.entry'));
             const feed = document.querySelector('.feed');
-            expect(feed.lenght > 0).toBe(false);
+            expect(feed.length > 0).toBe(false);
         });
     });
 
