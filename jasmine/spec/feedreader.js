@@ -106,9 +106,10 @@ $(function () {
 
 
         it('completes work', function () {
-            console.log($('.feed.entry'));
+            console.log($('.feed .entry'));
             const feed = document.querySelector('.feed');
             expect(feed.length > 0).toBe(false);
+            // expect(feed.length).toBeGreaterThan(1);
         });
     });
 
